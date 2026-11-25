@@ -1,5 +1,5 @@
 {
-  "geode": ">=4.0.0",
+  "geode": ">=1.8.0",
   "version": "v1.0.0",
   "id": "anix-glich.mod",
   "name": "MOD",

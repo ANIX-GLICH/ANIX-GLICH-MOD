@@ -1,13 +1,13 @@
 # MOD — Geode floating menu starter
 
-An Android-focused Geode mod starter for Geometry Dash. It adds a small **MOD** button during gameplay; tapping it opens an informational panel.
+An Android-focused Geode mod starter for Geometry Dash. It adds a small **MOD** button during gameplay; tapping it opens an informational panel. The project metadata now declares Geode **1.8.0 or newer** as its minimum.
 
-This repository intentionally does **not** implement speed hacks, noclip, or other gameplay cheats. The menu is a safe UI starting point, not a cheat pack. It currently does not implement auto-save or FPS features either.
+This is a safe UI starter: it does not change gameplay and does not include speedhack, noclip, or other gameplay cheats. It also does not currently implement auto-save or FPS features.
 
-## Build
+## Build and install
 
-1. Install the Geode SDK and CMake toolchain for your Android/Geometry Dash setup, following the [Geode documentation](https://docs.geode-sdk.org/).
-2. Configure this project with the Geode SDK available to CMake, then build/package it using the Geode CLI for Android.
-3. Install the generated `.geode` mod through Geode on your Android device.
+This repository contains source code, not a prebuilt `.geode` file. Build it using a Geode SDK/toolchain compatible with your installed Geode 1.8.0 Android setup and your Geometry Dash version. The CMake project uses Geode's `setup_geode_mod` helper, which must be provided by that SDK.
 
-The SDK/toolchain versions must match the installed Geode and Geometry Dash versions. This repository does not include a prebuilt Android binary.
+With the matching SDK and Geode CLI installed, build/package using the CLI's build command (commonly `geode build` from this project directory), then install the generated package through Geode on the Android device. Exact Android ABI/toolchain requirements depend on the Geode and Geometry Dash build installed on your device.
+
+If the build fails, share the complete build log and your Geometry Dash version so the source/API compatibility can be checked. This project has not yet been compiled against your local Android toolchain.

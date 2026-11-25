@@ -1,0 +1,8 @@
+{
+  "geode": ">=4.0.0",
+  "version": "v1.0.0",
+  "id": "anix-glich.mod",
+  "name": "MOD",
+  "developer": "ANIX-GLICH",
+  "description": "Android-focused floating menu UI starter for Geometry Dash."
+}
